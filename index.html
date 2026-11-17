@@ -4,25 +4,29 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<meta name="theme-color" content="#12355B">
+<meta name="theme-color" content="#EAF6FE">
 <title>Mahyra Reels</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#12355B;--sky:#4FB3F0;--ink:#0B1F33;--bg:#F3F7FB;--card:#fff;--line:#DCE6F0;--mut:#5C7088;--bad:#C0392B}
-@media (prefers-color-scheme:dark){:root{--bg:#0B1623;--card:#122236;--line:#243A54;--ink:#E8F1FA;--mut:#93A9C0;--navy:#4FB3F0}}
+:root{--navy:#12355B;--sky:#4FB3F0;--sky2:#2B8BD6;--ink:#0B1F33;--line:#D7E9F7;--mut:#5B7491;--bad:#C0392B}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-main{max-width:460px;margin:0 auto;padding:28px 16px}
-.logo{display:block;height:64px;margin:0 auto 10px}
-h1{font-size:20px;text-align:center;color:var(--navy);margin:0 0 4px}
-p.s{text-align:center;color:var(--mut);margin:0 0 18px;font-size:13px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
-label{display:block;font-size:13px;font-weight:600;margin:12px 0 5px}
-input{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:11px 12px;min-height:44px}
-button{font:inherit;width:100%;margin-top:16px;min-height:46px;border-radius:10px;border:0;background:var(--navy);color:#fff;font-weight:700;cursor:pointer}
-@media (prefers-color-scheme:dark){button{color:#0B1F33}}
+body{margin:0;color:var(--ink);font:15px/1.5 "Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;min-height:100vh;
+  background:radial-gradient(900px 420px at 80% -10%,#D5ECFC 0%,rgba(213,236,252,0) 60%),linear-gradient(180deg,#EAF6FE 0%,#F7FCFF 100%) fixed}
+main{max-width:440px;margin:0 auto;padding:48px 16px}
+.logo{display:block;height:72px;margin:0 auto 12px}
+h1{font-size:24px;font-weight:800;text-align:center;color:var(--navy);margin:0 0 4px;letter-spacing:-.01em}
+p.s{text-align:center;color:var(--mut);margin:0 0 22px;font-size:13.5px}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:0 1px 2px rgba(18,53,91,.05),0 12px 30px rgba(18,53,91,.08)}
+label{display:block;font-size:13px;font-weight:600;margin:12px 0 6px;color:#2A4A6B}
+input{width:100%;font:inherit;color:var(--ink);background:#F3FAFF;border:1px solid var(--line);border-radius:12px;padding:11px 13px;min-height:46px}
+input:focus{outline:none;border-color:var(--sky);background:#fff;box-shadow:0 0 0 4px rgba(79,179,240,.18)}
+button{font:inherit;width:100%;margin-top:18px;min-height:50px;border-radius:12px;border:0;color:#fff;font-weight:700;cursor:pointer;
+  background:linear-gradient(135deg,var(--sky2),var(--sky));box-shadow:0 8px 20px rgba(43,139,214,.28)}
 .err{color:var(--bad);font-size:13px;margin:10px 0 0}
 .hint{color:var(--mut);font-size:13px;margin:14px 0 0}
-a{color:var(--navy)}
+a{color:var(--sky2);font-weight:600}
 </style>
 </head>
 <body>
