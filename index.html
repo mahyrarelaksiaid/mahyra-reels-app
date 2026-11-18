@@ -63,7 +63,8 @@ function showForm(msg) {
   $("err").textContent = msg || "";
 }
 async function boot() {
-  const token = store.get("token"), repo = store.get("repo", DEFAULT_REPO);
+  // Kode web tool selalu diambil dari repo utama; repo usaha yang dipilih (Mahyra / mesin cuci / ...) dipakai untuk data.
+  const token = store.get("token"), repo = store.get("app_repo", DEFAULT_REPO);
   if (!token) return showForm();
   $("status").textContent = "Memuat versi terbaru…";
   let html = null, authFail = false;
